@@ -1,4 +1,3 @@
-import 'package:bloc101/counter/counter.dart';
 import 'package:bloc101/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +15,11 @@ class App extends StatelessWidget {
       ),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const CounterPage(),
+      home: Scaffold(
+        appBar: AppBar(),
+        body: const Center(child: Text('Hello World'),),
+        floatingActionButton: FloatingActionButton(onPressed: () {},),
+      ),
     );
   }
 }
